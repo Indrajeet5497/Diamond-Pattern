@@ -12,33 +12,35 @@
     <script>
         let n = 5;
         let string = "";
-
-        // upperside of pyramid
-        for( 1=1; i<=n; i++ ){
+        // Upside pyramoid
+        // Upside Diamond
+        for(i=1; i<=5; i++){
             // printing spaces
-            for(j=n; j>1; j--){
+             for(j=5; j>i; j--){
                 string += " ";
-            }
-            // printing star
-            for(k=0; k<i*2-1; k++){
-                string += "*";
-            }
-            string += "\n"
-        }
-        // down side of Diamond
-        for(i=1; i<=n-1; i++){
-            // printing spaces
-            for(j=0; j<1; j++){
-                string += " ";
-            }
-            for(k=(n-i)*2-1; k>0; k--){
-                string += "*";
-            }
+             }
+            //  printing start
+            for(k=1; k<=2*i-1; k++){
+                
+                    string += "*";
+                }
             string += "\n";
         }
-        console.log(string);
 
-           
+        for(i=4; i>=1; i--){
+            // printing spaces
+             for(j=5; j>i; j--){
+                string += " ";
+             }
+            //  printing start
+            for(k=1; k<=2*i-1; k++){
+                
+                    string += "*";
+                }
+            string += "\n";
+        }
+        
+        console.log(string);
     </script>
 </body>
 </html>
